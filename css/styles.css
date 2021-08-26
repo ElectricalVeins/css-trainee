@@ -1,0 +1,25 @@
+/* КАСКАДНОСТЬ */
+
+/* 
+1 - вес
+Селектор по типу тега: h1, p, div, article 
+*/
+p {
+   color: dodgerblue;
+}
+
+/* 
+10 - вес
+Классовый селектор: .* 
+*/
+.primary-text {
+    color: darkred;
+}
+
+/*
+100 - вес
+Селектор по id 
+*/
+#unique {
+    color: blueviolet;
+}
