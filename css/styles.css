@@ -1,25 +1,22 @@
-/* КАСКАДНОСТЬ */
-
-/* 
-1 - вес
-Селектор по типу тега: h1, p, div, article 
-*/
-p {
-   color: dodgerblue;
-}
-
-/* 
-10 - вес
-Классовый селектор: .* 
-*/
 .primary-text {
     color: darkred;
+
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
 }
 
-/*
-100 - вес
-Селектор по id 
-*/
-#unique {
+.secondaryText {
     color: blueviolet;
+}
+
+.textContainer {
+    display: inline-block;
+    margin: 20px 10px;
+
+    border: 5px solid red;
+
+    padding-left: 20px;
+    padding-top: 50px;
 }
