@@ -1,21 +1,47 @@
-.container {
-  color: blueviolet;
-
-  border: 3px solid red;
+:root {
+  --border-width: 2px;
 }
 
-.parent {
-  color: initial;
-
-  border: inherit;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.child {
-  color: red;
+body {
+  background-color: black;
 }
 
-.header {
+.imageContainer {
+  display: inline-block;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+  border: var(--border-width) solid transparent;
 }
 
-.text {
+.image {
+  width: inherit;
+  height: inherit;
+  object-fit: cover; /* Работает, только если задана высота и ширина для картинки */
+  object-position: center; /* Окно просмотра */
+  /* имя свойства | длительность | временная функция | задержка */
+  transition: all 200ms ease-in-out;
+}
+
+.imageContainer:hover {
+  box-shadow: 0px 0px 43px -3px rgba(255, 255, 255, 0.81);
+  border: var(--border-width) solid red;
+}
+
+.image:hover {
+  transform: scale(1.15);
+  filter: blur(2px) grayscale(66%);
+}
+
+.overflow-test {
+  width: 300px;
+  height: 45px;
+  color: white;
+
+  overflow: auto;
 }
