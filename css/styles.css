@@ -1,22 +1,21 @@
-.primary-text {
-    color: darkred;
+.container {
+  color: blueviolet;
 
-    font-size: 32px;
-    font-weight: 500;
-    font-family: 'Arial', sans-serif;
-    font-style: italic;
+  border: 3px solid red;
 }
 
-.secondaryText {
-    color: blueviolet;
+.parent {
+  color: initial;
+
+  border: inherit;
 }
 
-.textContainer {
-    display: inline-block;
-    margin: 20px 10px;
+.child {
+  color: red;
+}
 
-    border: 5px solid red;
+.header {
+}
 
-    padding-left: 20px;
-    padding-top: 50px;
+.text {
 }
