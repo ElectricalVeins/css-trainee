@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  min-height: 300vh;
+}
+
 .parent {
   background-color: dodgerblue;
   height: 50vh;
@@ -18,4 +22,24 @@
 
   font-size: 60px;
   text-align: center;
+}
+
+.block {
+  padding: 20px;
+  background-color: darkred;
+  display: inline-block;
+  color: white;
+  border: 3px solid yellowgreen;
+}
+
+.shiftRelative {
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
+
+.shiftFixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
