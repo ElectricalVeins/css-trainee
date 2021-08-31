@@ -32,14 +32,25 @@ body {
   border: 3px solid yellowgreen;
 }
 
-.shiftRelative {
+.p1 {
+  padding: 50px;
+  background-color: teal;
+
   position: relative;
-  bottom: 10px;
-  left: 5px;
 }
 
-.shiftFixed {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+.p2 {
+  padding: 70px;
+  background-color: thistle;
+
+  position: relative;
+}
+
+.shift {
+  /* Абсолютное позиционирование относительно 
+  первого родителя со значением свойства
+  position отличным от static */
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
