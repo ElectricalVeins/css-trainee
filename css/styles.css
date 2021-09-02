@@ -1,56 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-height: 300vh;
-}
-
-.parent {
-  background-color: dodgerblue;
-  height: 50vh;
-
-  width: 50%;
-}
-
-.child {
-  cursor: pointer;
-  background-color: darkred;
-  height: 50%;
-  width: 50%;
-
-  font-size: 60px;
-  text-align: center;
-}
-
-.block {
-  padding: 20px;
-  background-color: darkred;
-  display: inline-block;
+.navContainer {
   color: white;
-  border: 3px solid yellowgreen;
+  font-size: 0;
+  font-family: sans-serif;
 }
 
-.p1 {
-  padding: 50px;
-  background-color: teal;
-
-  position: relative;
+.navContainer > li {
+  font-size: 16px;
+  display: inline-block;
+  background-color: rgb(91, 155, 91);
 }
 
-.p2 {
-  padding: 70px;
-  background-color: thistle;
+.navContainer a {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid green;
 
-  position: relative;
+  background-color: rgb(91, 155, 91);
+
+  text-decoration: none;
+  color: inherit;
 }
 
-.shift {
-  /* Абсолютное позиционирование относительно 
-  первого родителя со значением свойства
-  position отличным от static */
+.navContainer li:hover > a {
+  background-color: green;
+}
+
+.subNavMenu {
+  display: none;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 36px;
+  left: 0px;
+  width: 100%;
+}
+
+.subNavContainer {
+  position: relative;
+}
+
+.subNavContainer a {
+  width: 100%;
+}
+
+.subNavContainer:hover > .subNavMenu {
+  display: inline-block;
 }
