@@ -4,42 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-
-    <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="navContainer">
-        <li><a href="#">Home</a></li>
-        <li class="subNavContainer">
-          <a href="#">
-            <span>Categories</span>
-          </a>
-          <ul class="subNavMenu">
-            <li><a href="#">Man</a></li>
-            <li><a href="#">Woman</a></li>
-            <li><a href="#">Kids</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </nav>
+    <section class="cardList">
+      <article class="cardContainer">
+        <div class="photoContainer">
+          <img
+            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
+            alt="Luisa Smith"
+            class="userPhoto"
+          />
+        </div>
+        <div class="cardHeader">
+          <h1>Luisa Smith</h1>
+          <p>@LuiSminth</p>
+        </div>
 
-    <article>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
-        officia! Tempora veniam eveniet error voluptatem quaerat quod in neque
-        iusto earum porro, quas ipsa suscipit perferendis ullam, voluptatum eos
-        provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Soluta, obcaecati suscipit est molestiae corrupti iure facere cupiditate
-        tempora placeat laborum nihil necessitatibus laudantium non cumque nisi
-        nostrum quasi, harum dolorem?
-      </p>
-    </article>
+        <div class="infoContainer">
+          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
+          <div class="geolocation">
+            <img src="./images/gps.png" alt="" />
+            <span>San Francisco, CA</span>
+          </div>
+          <div class="userContact">
+            <a href="#">LInk to my site</a>
+          </div>
+        </div>
+        <div class="interactions">
+        <div class="userCardButtons">
+          <div class="cardButton">
+            <div class="iconContainer">
+              <img src="./images/people.png" alt="" class="buttonIcon" />
+            </div>
+            <div>326 Followers</div>
+          </div>
+
+          <div class="cardButton">
+            <div class="iconContainer">
+              <img src="./images/bird.png" alt="" class="buttonIcon" />
+            </div>
+            <div>125 tweets</div>
+          </div>
+
+          <div class="cardButton">
+            <div class="iconContainer">
+              <img src="./images/person.png" alt="" class="buttonIcon" />
+            </div>
+            <div>
+              271 Following
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="followButton">Follow Me</button>
+        </div>
+      </div>
+
+      </article>
+    </section>
   </body>
 </html>
