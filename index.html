@@ -5,671 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="cardList">
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
+    <form>
+      <div>
+        <label>
+          Enter your email:
+          <input type="email" placeholder="email" name="email" required />
+        </label>
+      </div>
+      <div>
+        <label>
+          Enter your login:
+          <input
+            type="text"
+            autofocus
+            placeholder="login"
+            name="login"
+            required
           />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
+        </label>
+      </div>
+      <div>
+        <label>
+          Enter your pass:
+          <input
+            title="Пароль должен содержать от 2 до 16 букв"
+            type="password"
+            placeholder="password"
+            name="password"
+            pattern="[a-zA-Z]{2,16}"
+            required
           />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
+        </label>
+      </div>
+      <div>
+        <input id="age" type="number" name="age" placeholder="age" />
+      </div>
+      <div>
+        <label>
+          Sex: m: <input type="radio" name="sex" value="male" /> f:
+          <input type="radio" name="sex" value="female" />
+        </label>
+      </div>
+      <div>
+        <select name="city">
+          <optgroup label="города укр">
+            <option value="zp">Zaporozhye</option>
+            <option value="dp">Dnepr</option>
+            <option value="kv">Kiev</option>
+          </optgroup>
+          <optgroup label="города роисси">
+            <option value="zp">Zaporozhye</option>
+            <option value="dp">Dnepr</option>
+            <option value="kv">Kiev</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label>
+          РАссказ о себе:
+          <textarea  name="descr" id="1" cols="30" rows="10"></textarea>
+        </label>
+      </div>
+      <div>Terms of agree: <input type="checkbox" name="terms" /></div>
+      <input type="submit" />
+      <input type="range" name="" id="" />
+      <input type="reset" value="reset" />
+    </form>
 
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-      <article class="cardContainer">
-        <div class="photoContainer">
-          <img
-            src="https://cdn.forbes.ru/forbes-static/1040x507/new/2021/09/ForbesWoman3919-1-612fb2cf90bf2-612fb2cfb7fd4.jpg"
-            alt="Luisa Smith"
-            class="userPhoto"
-          />
-        </div>
-        <div class="cardHeader">
-          <h1>Luisa Smith</h1>
-          <p>@LuiSminth</p>
-        </div>
-
-        <div class="infoContainer">
-          <p class="mainInfo">Lorem ipsum dolor sit amet.</p>
-          <div class="geolocation">
-            <img src="./images/gps.png" alt="" />
-            <span>San Francisco, CA</span>
-          </div>
-          <div class="userContact">
-            <a href="#">LInk to my site</a>
-          </div>
-        </div>
-        <div class="interactions">
-          <div class="userCardButtons">
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/people.png" alt="" class="buttonIcon" />
-              </div>
-              <div>326 Followers</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/bird.png" alt="" class="buttonIcon" />
-              </div>
-              <div>125 tweets</div>
-            </div>
-
-            <div class="cardButton">
-              <div class="iconContainer">
-                <img src="./images/person.png" alt="" class="buttonIcon" />
-              </div>
-              <div>
-                271 Following
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button class="followButton">Follow Me</button>
-          </div>
-        </div>
-      </article>
-    </section>
+    <label for="age">FOCUS ON AGE FIELD</label>
   </body>
 </html>
